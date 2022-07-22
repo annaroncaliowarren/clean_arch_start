@@ -8,6 +8,6 @@ class SaveComputerFavoriteUsecaseImp implements ISaveComputerFavoriteUsecase {
 
   @override
   Future<bool> save(ComputerEntity computer) async {
-    return _saveComputerFavoriteRepository.save(computer);
+    return await _saveComputerFavoriteRepository.save(computer);
   }
 }
